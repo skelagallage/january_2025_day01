@@ -1,6 +1,8 @@
 package com.ucsc.automationcc.practical.librarymanagementsystem;
 
-public abstract class ItemsType {
+import java.io.Serializable;
+
+public abstract class ItemsType implements Serializable {
 
     private String title;
     private String author;
@@ -18,5 +20,9 @@ public abstract class ItemsType {
 
     public String getTitle() {
         return title;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
     }
 }
